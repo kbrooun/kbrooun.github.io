@@ -1,0 +1,182 @@
+body {
+	margin: 0px;
+	color: #404040;
+}
+
+#content {
+	font-family: Open Sans;
+	overflow-x: hidden;
+}
+
+#topbar {
+	position: fixed;
+	background-color: #C3DFE0;
+	width: 100%;
+	max-height: 60px;
+	z-index: 10;
+}
+
+.table {
+	display: table;
+	margin: 0 auto;
+}
+
+.horizontallist {
+	list-style: none;
+	white-space: nowrap;
+}
+
+.topelem {
+	display: inline;
+	padding: 0px 40px;
+	font-family: Dancing Script;
+	font-size: 25px;
+}
+
+a {
+    color: #404040;
+    text-decoration: none;
+}
+
+a:hover 
+{
+     opacity: 0.5; 
+     text-decoration:none; 
+     cursor:pointer;  
+}
+
+#sidebar {
+	position: fixed;
+	top: 60px;
+	background-color: rgba(242, 237, 216, 0.5);
+	width: 200px;
+	height: 100%;
+	overflow: hidden;
+}
+
+#sortby {
+	margin-top: 0px;
+	position: relative;
+	height: 100px;
+	font-size: 20px;
+	background-color: #F2EDD8;
+	width: 100%;
+}
+
+#sortbytitle {
+	font-weight: bold;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+.arrow-container#sort-arrow {
+	position: relative;
+	float: right;
+	width: 20px;
+	height: 20px;
+	margin-top: 5px;
+}
+
+.arrow-container.sidebar-arrow {
+	position: relative;
+	float: left;
+	width: 10px;
+	height: 10px;
+	margin-top: 5px;
+	margin-right: 10px;
+	transform: translateY(-50%);
+}
+
+.down-arrow {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+	opacity: 0.6;
+}
+
+.down-arrow:hover {
+	opacity: 0.3;
+}
+
+#sidebarcontent {
+	margin-top: 30px;
+}
+
+.sortbyelem {
+	font-family: Open Sans;
+	font-size: 15px;
+	position: relative;
+	left: 40px;
+	width: 20px;
+	cursor: pointer;
+}
+
+.sortbyelem:hover {
+	opacity: 0.5;
+}
+
+.country, .month {
+	font-family: Dancing Script;
+	font-size: 25px;
+	margin: 10px 0px;
+	padding-left: 20px;
+}
+
+.city, .day {
+	position: relative;
+	font-size: 15px;
+	left: 40px;
+	width: 125px;
+	font-family: Open Sans;
+}
+
+.city:hover,.day:hover {
+	opacity: 0.5;
+}
+
+.postcontainer {
+	position: relative;
+	left: 200px;
+	top: 60px;
+	padding-top: 25px;
+	overflow-y: scroll;
+	width: 800px;
+}
+
+.post {
+	margin: 25px 50px;
+}
+
+.titledate {
+	font-family: Dancing Script;
+	font-size: 20px;
+	color: #9DAD6F;
+}
+
+.titlelocation {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.text {
+	margin-top: 10px;
+}
+
+.anchor{
+  display: block;
+  height: 75px; /*same height as header*/
+  margin-top: -75px; /*same height as header*/
+  visibility: hidden;
+}
+
+/** used by jQuery */
+
+.invisible {
+	display: none;
+}
+
+.sort-by-hidden {
+	transform: translateY(-85px);
+}
+

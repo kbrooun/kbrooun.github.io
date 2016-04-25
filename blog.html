@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="assets/css/blog.css"/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+        </script> 
+		<script src = "assets/js/blog.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+	<div id="content">
+		<div id="topbar">
+			<div class="table">
+				<ul class="horizontallist">
+					<li class="topelem"> 
+						<a href="index.html">Home</a>
+					</li>
+					<li class="topelem"> 
+						<a href="blog.html">Blog</a>
+					</li>
+					<li class="topelem"> 
+						<a href="photo.html">Photo Album</a>
+					</li>
+					<li class="topelem"> 
+						About
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id= "sidebar">
+			<div id="sortby">
+				<div id = "sortbytitle">
+					Sort By
+				</div>
+				<div class="sortbyelem" id="sort-by-location">
+					Location
+				</div>
+				<div class="sortbyelem" id="sort-by-date">
+					Date
+				</div>
+				<div class="arrow-container" id = "sort-arrow">
+					<img class="down-arrow" src="assets/img/down_arrow.png"/>
+				</div>
+			</div>
+
+			<div id="sidebarcontent">
+				<div class="sidebar-group by-location">
+
+					<div class="grouping">
+						<div class="country">
+							France
+							<div class="arrow-container sidebar-arrow">
+								<img class="down-arrow" src="assets/img/down_arrow.png"/>
+							</div>
+						</div>
+						<div class="citylist" id="france">
+							<a href="#paris">
+								<div class="city">
+								Paris
+								</div>
+							</a>
+						</div>
+					</div>
+
+					<div class= "grouping">
+						<div class="country">
+							United States
+							<div class="arrow-container sidebar-arrow">
+								<img class="down-arrow" src="assets/img/down_arrow.png"/>
+							</div>
+						</div>
+						<div class="citylist" id="unitedstates">
+							<a href="#SD">
+								<div class="city">
+								San Diego
+								</div>
+							</a>
+							<a href="#SF">
+								<div class="city">
+								San Francisco
+							</div>
+							</a>
+						</div>
+					</div>
+					
+				</div>
+
+				<div class="sidebar-group by-date">
+					<div class = "grouping">
+					<div class="month">
+						March
+						<div class="arrow-container sidebar-arrow">
+							<img class="down-arrow" src="assets/img/down_arrow.png"/>
+						</div>
+					</div>
+					<div class="daylist">
+						<a href="#SD-3-25-16">
+							<div class="day">
+								March 25, 2016
+							</div>
+						</a>
+						<a href="#SF-3-10-16">
+							<div class="day">
+								March 10, 2016
+							</div>
+						</a>
+					</div>
+					</div>
+					<div class = "grouping">
+					<div class="month">
+						January
+						<div class="arrow-container sidebar-arrow">
+							<img class="down-arrow" src="assets/img/down_arrow.png"/>
+						</div>
+					</div>
+					<div class="daylist">
+						<a href="#Paris-1-08-16">
+							<div class="day">
+								January 8, 2016
+							</div>
+						</a>
+					</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="postcontainer by-location">
+			<span class = "anchor" id = "paris">
+			</span>
+			<div class="post">
+				<div class="titledate">
+					1/08/16
+				</div>
+				<div class="titlelocation">
+					Paris, France
+				</div>
+				<div class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+
+			<span class = "anchor" id = "SD">
+			</span>
+			<div class="post">	
+				<div class="titledate">
+					3/25/16
+				</div>
+				<div class="titlelocation">
+					San Diego, CA, United States
+				</div>
+				<div class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+
+			<span class = "anchor" id = "SF">
+			</span>
+			<div class="post">
+				<div class="titledate">
+					3/10/16
+				</div>
+				<div class="titlelocation">
+					San Francisco, CA, United States
+				</div>
+				<div class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+		</div>
+
+		<div class="postcontainer by-date">
+			<span class="anchor" id="SD-3-25-16">
+			</span>
+			<div class="post">
+				<div class="titledate">
+					3/25/16
+				</div>
+				<div class="titlelocation">
+					San Diego, CA, United States
+				</div>
+				<div class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+
+			<span class="anchor" id="SF-3-10-16">
+			</span>
+			<div class="post">
+				<div class="titledate">
+					3/10/16
+				</div>
+				<div class="titlelocation">
+					San Francisco, CA, United States
+				</div>
+				<div class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+			<span class="anchor" id="Paris-1-08-16">
+			</span>
+			<div class="post">
+				<div class="titledate">
+					1/08/16
+				</div>
+				<div class="titlelocation">
+					Paris, France
+				</div>
+				<div class="text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</body>
+
+</html>
