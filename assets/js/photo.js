@@ -1,8 +1,11 @@
 $(document).ready(function() {
 	$('.by-date').addClass('invisible');
+	$('#sort-by-location').addClass('clicked');
 
 	$('#sort-by-location').click(function() {
 		if ($('.by-location').hasClass('invisible')) {
+			$('#sort-by-location').addClass('clicked');
+			$('#sort-by-date').removeClass('clicked');
 			$('.by-location').removeClass('invisible');
 			$('.by-date').addClass('invisible');
 		}
@@ -10,6 +13,8 @@ $(document).ready(function() {
 
 	$('#sort-by-date').click(function() {
 		if ($('.by-date').hasClass('invisible')) {
+			$('#sort-by-date').addClass('clicked');
+			$('#sort-by-location').removeClass('clicked');
 			$('.by-date').removeClass('invisible');
 			$('.by-location').addClass('invisible');
 		}

@@ -136,12 +136,12 @@ a:hover
 }
 
 .postcontainer {
-	position: relative;
+	position: absolute;
 	left: 200px;
 	top: 60px;
 	padding-top: 25px;
-	overflow-y: scroll;
 	width: 800px;
+	height: 100%;
 }
 
 .post {
@@ -163,7 +163,7 @@ a:hover
 	margin-top: 10px;
 }
 
-.anchor{
+.anchor {
   display: block;
   height: 75px; /*same height as header*/
   margin-top: -75px; /*same height as header*/
@@ -178,5 +178,10 @@ a:hover
 
 .sort-by-hidden {
 	transform: translateY(-85px);
+}
+
+.clicked {
+	opacity: 0.5;
+	font-weight: bold;
 }
 

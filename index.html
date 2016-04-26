@@ -2,20 +2,17 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="assets/css/index.css"/>
-		<script src = "assets/js/index.js"></script>
 		<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-		<style>
-			
 
-		</style>
 		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-		<script src="http://unslider.com/unslider.min.js"></script>
+		<script src = "http://unslider.com/unslider.min.js"></script>
+		<script src = "assets/js/index.js"></script>
 
 		<script>
 			$(function() {
-			    $('.banner').unslider({delay: 10000});
-			});
+				$('.banner').unslider({delay: 10000});
+			})	
 		</script>
 	</head>
 
@@ -31,7 +28,7 @@
 						<a href="blog.html">Blog</a>
 					</li>
 					<li class="topelem"> 
-						<a href="photo.html">Photo Album</a>s
+						<a href="photo.html">Photo Album</a>
 					</li>
 					<li class="topelem"> 
 						About
@@ -46,20 +43,22 @@
 	        		Life is either a daring adventure or nothing.
 	        		<div class="author">Helen Keller</div>
 	        	</div>
-	 
+	        	<img class="plane-img" src="assets/img/plane.jpg">
+	        	
 	        </li>
 			<li class="panel" id="panel2">
 	        	<div class="text">
 	        		Not all those who wander are lost.
 	        		<div class="author">J.R.R. Tolkien</div>
 	        	</div>
-	        	
+	        	<img class="plane-img" src="assets/img/plane.jpg">
 	        </li>
 	        <li class="panel" id="panel3">
 	        	<div class="text">
 	        		I haven't been everywhere, but it's on my list.
 	        		<div class="author">Susan Sontag</div>
 	        	</div>
+	        	<img class="plane-img" src="assets/img/plane.jpg">
 	    
 	        </li>
 	        <li class="panel" id="panel4">
@@ -67,17 +66,89 @@
 	        		Oh the places you'll go.
 	        		<div class="author">Dr. Seuss</div>
 	        	</div>
+	        	<img class="plane-img" src="assets/img/plane.jpg">
 	        </li>
 	        <li class="panel" id="panel5">
 	        	<div class="text">
 	        		The life you have led doesn't need to be the only life you have.
 	        		<div class="author">Anna Quindlen</div>
 	        	</div>
+	        	<img class="plane-img" src="assets/img/plane.jpg">
 	        </li>
 	    </ul>
 	</div>
 
 	<div id="map-container">
+		<div class="pin-n-box">
+			<div class="pin-container" id="sd-pin">
+				<img class="pin" src="assets/img/pin.png">
+			</div>
+			<div class = "city-box" id="sd-box">
+				<div class="box-city">
+					San Diego
+				</div>
+				<div class = "box-pic-container">
+					<img class="box-img" src="assets/img/san-diego1.jpg">
+				</div>
+				<div class="to-post">
+					<a href="blog.html#SD">
+						Go to post
+					</a>
+				</div>
+				<div class="to-photo">
+					<a href="photo.html#sd-grid">
+						Go to photo
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="pin-n-box">
+			<div class="pin-container" id="paris-pin">
+				<img class="pin" src="assets/img/pin.png">
+			</div>
+			<div class = "city-box" id="paris-box">
+				<div class="box-city">
+					Paris
+				</div>
+				<div class = "box-pic-container">
+					<img class="box-img" src="assets/img/paris1.jpg">
+				</div>
+				<div class="to-post">
+					<a href="blog.html#paris">
+						Go to post
+					</a>
+				</div>
+				<div class="to-photo">
+					<a href="photo.html#paris-grid">
+						Go to photo
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="pin-n-box">
+			<div class="pin-container" id="sf-pin">
+				<img class="pin" src="assets/img/pin.png">
+			</div>
+			<div class = "city-box" id="sf-box">
+				<div class="box-city">
+					San Francisco
+				</div>
+				<div class = "box-pic-container">
+					<img class="box-img" src="assets/img/sf1.jpg">
+				</div>
+				<div class="to-post">
+					<a href="blog.html#SF">
+						Go to post
+					</a>
+				</div>
+				<div class="to-photo">
+					<a href="photo.html#sf-grid">
+						Go to photo
+					</a>
+				</div>
+			</div>
+		</div>
 		<img id="map" src="assets/img/map.jpg">
 	</div>
 
